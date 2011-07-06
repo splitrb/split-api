@@ -17,6 +17,9 @@ Gem::Specification.new do |gem|
   gem.add_dependency 'split'
   gem.add_dependency 'rabl'
   gem.add_dependency 'sinatra'
+  gem.add_dependency 'activesupport'
+  gem.add_dependency 'builder'
+  gem.add_dependency 'i18n'
 
   gem.add_development_dependency 'bundler',     '~> 1.0'
   gem.add_development_dependency 'rspec',       '~> 2.6'
