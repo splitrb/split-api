@@ -1,6 +1,6 @@
 require 'sinatra/base'
 require 'split'
-require 'json'
+require 'multi_json'
 
 module Split
   class API < Sinatra::Base
@@ -12,7 +12,7 @@ module Split
       control = params[:control]
       alternatives = params[:alternatives]
       alternative = ab_test(experiment, control, alternatives)
-      {:alternative => alternative}.to_json
+      MultiJson.encode({:alternative => alternative})
     end
 
     post '/finished' do

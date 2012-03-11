@@ -16,7 +16,7 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency 'split'
   gem.add_dependency 'sinatra'
-  gem.add_dependency 'json'
+  gem.add_dependency 'multi_json'
 
   gem.add_development_dependency 'bundler',     '~> 1.0'
   gem.add_development_dependency 'rspec',       '~> 2.6'
