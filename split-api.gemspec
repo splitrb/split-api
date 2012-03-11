@@ -15,13 +15,10 @@ Gem::Specification.new do |gem|
   gem.version       = Split::Api::VERSION
 
   gem.add_dependency 'split'
-  gem.add_dependency 'rabl'
   gem.add_dependency 'sinatra'
-  gem.add_dependency 'activesupport'
-  gem.add_dependency 'builder'
-  gem.add_dependency 'i18n'
+  gem.add_dependency 'json'
 
   gem.add_development_dependency 'bundler',     '~> 1.0'
   gem.add_development_dependency 'rspec',       '~> 2.6'
-  gem.add_development_dependency 'guard-rspec', '~> 0.4'
+  gem.add_development_dependency 'rack-test',   '~> 0.6'
 end

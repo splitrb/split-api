@@ -12,7 +12,15 @@ The split gem and its dependencies.
 
 ## Usage
 
-tbc
+TODO 
+
+## TODO
+
+Javascript library for communicating with api
+
+## Session sharing
+
+*note to be added about sharing sessions between apps*
 
 ## Development
 

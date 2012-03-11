@@ -1,4 +1,6 @@
+ENV['RACK_ENV'] = "test"
+
 require 'rubygems'
 require 'bundler/setup'
-require 'split'
 require 'split/api'
+require 'rack/test'

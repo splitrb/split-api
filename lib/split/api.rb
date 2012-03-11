@@ -1,20 +1,24 @@
 require 'sinatra/base'
 require 'split'
-require 'rabl'
-require 'active_support/core_ext'
-require 'active_support/inflector'
-require 'builder'
+require 'json'
 
 module Split
   class API < Sinatra::Base
-    Rabl.register!
-    dir = File.dirname(File.expand_path(__FILE__))
+    enable :sessions
+    helpers Split::Helper
 
-    set :views,  "#{dir}/api/views"
+    get '/ab_test' do
+      experiment = params[:experiment]
+      control = params[:control]
+      alternatives = params[:alternatives]
+      alternative = ab_test(experiment, control, alternatives)
+      {:alternative => alternative}.to_json
+    end
 
-    get '/experiments.json' do
-      @experiments = Split::Experiment.all
-      render :rabl, :index, :format => :json
+    post '/finished' do
+      experiment = params[:experiment]
+      finished(experiment)
+      200
     end
   end
 end

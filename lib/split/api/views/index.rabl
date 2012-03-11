@@ -1,2 +1,0 @@
-collection @experiments
-attributes :name
