@@ -6,6 +6,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["andrewnez@gmail.com"]
   gem.summary       = %q{Rest API extension for Split}
   gem.homepage      = 'http://github.com/andrew/split-api'
+  gem.license       = 'MIT'
 
   gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   gem.files         = `git ls-files`.split("\n")
