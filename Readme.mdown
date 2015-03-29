@@ -1,6 +1,6 @@
 # Split::Api
 
-An extension to [Split](http://github.com/andrew/split) to provide a REST-based JSON api.
+An extension to [Split](http://github.com/splitrb/split) to provide a REST-based JSON api.
 
 ## Requirements
 
@@ -24,8 +24,8 @@ Javascript library for communicating with api
 
 ## Development
 
-Source hosted at [GitHub](http://github.com/andrew/split-api).
-Report Issues/Feature requests on [GitHub Issues](http://github.com/andrew/split-api/issues).
+Source hosted at [GitHub](http://github.com/splitrb/split-api).
+Report Issues/Feature requests on [GitHub Issues](http://github.com/splitrb/split-api/issues).
 
 Tests can be ran with `rake spec`
 
