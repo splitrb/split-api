@@ -8,22 +8,27 @@ describe Split::API do
   end
 
   before(:each) { Split.redis.flushall }
-  
+
   describe '/ab_test' do
     it "should respond" do
       get '/ab_test', :experiment => 'text_color', :control => 'red', :alternatives => 'blue'
       last_response.should be_ok
     end
-  
+
+    it 'should accept an array of alternatives' do
+      get '/ab_test', :experiment => 'text_color', :control => 'red', :alternatives => ['blue', 'green', 'yellow']
+      last_response.should be_ok
+    end
+
     it 'should set the correct session variable'
   end
-  
+
   describe '/finished' do
     it "should respond" do
       post '/finished', :experiment => 'text_color'
       last_response.should be_ok
     end
-    
+
     it 'should handle having an empty session'
   end
 end

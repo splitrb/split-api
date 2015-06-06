@@ -11,7 +11,7 @@ module Split
       experiment = params[:experiment]
       control = params[:control]
       alternatives = params[:alternatives]
-      alternative = ab_test(experiment, control, alternatives)
+      alternative = ab_test(experiment, control, *alternatives)
       MultiJson.encode({:alternative => alternative})
     end
 
