@@ -15,7 +15,7 @@ Gem::Specification.new do |gem|
   gem.require_paths = ['lib']
   gem.version       = Split::Api::VERSION
 
-  gem.add_dependency 'split'
+  gem.add_dependency 'split', '>= 2.0'
   gem.add_dependency 'sinatra'
   gem.add_dependency 'multi_json'
 
