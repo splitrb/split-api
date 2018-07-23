@@ -1,30 +1,4 @@
-# Split::API
-
-An extension to [Split](http://github.com/splitrb/split) to provide a REST-based JSON API.
-
-## Install
-
-### Requirements
-
-The split gem and its dependencies.
-
-### Setup
-
-    gem install split-api
-
-## Usage
-
-TODO 
-
-## TODO
-
-Javascript library for communicating with api
-
-## Session sharing
-
-*note to be added about sharing sessions between apps*
-
-## Contributing
+# Contributing
 
 Source hosted at [GitHub](http://github.com/splitrb/split-api).
 Report Issues/Feature requests on [GitHub Issues](http://github.com/splitrb/split-api/issues).
@@ -33,7 +7,7 @@ Tests can be ran with `rake spec`
 
 Please conform to the [Code of Conduct](CODE_OF_CONDUCT.md).
 
-### Note on Patches/Pull Requests
+## Note on Patches/Pull Requests
 
  * Fork the project.
  * Make your feature addition or bug fix.
@@ -42,7 +16,3 @@ Please conform to the [Code of Conduct](CODE_OF_CONDUCT.md).
  * Commit, do not mess with rakefile, version, or history.
    (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
  * Send me a pull request. Bonus points for topic branches.
-
-## License
-
-Copyright (c) 2013-2018 Andrew Nesbitt. See [LICENSE](LICENSE) for details.
