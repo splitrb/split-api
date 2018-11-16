@@ -20,7 +20,7 @@ Gem::Specification.new do |gem|
   gem.add_dependency 'multi_json'
 
   gem.add_development_dependency 'bundler',     '~> 1.0'
-  gem.add_development_dependency 'rspec',       '~> 2.6.0'
+  gem.add_development_dependency 'rspec',       '~> 3.8.0'
   gem.add_development_dependency 'rack-test',   '~> 1.1'
   gem.add_development_dependency 'rake',        '~> 12.0'
 end
