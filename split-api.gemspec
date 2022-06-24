@@ -21,6 +21,6 @@ Gem::Specification.new do |gem|
 
   gem.add_development_dependency 'bundler'
   gem.add_development_dependency 'rspec',       '~> 3.11.0'
-  gem.add_development_dependency 'rack-test',   '~> 1.1'
+  gem.add_development_dependency 'rack-test',   '~> 2.0'
   gem.add_development_dependency 'rake',        '~> 13.0'
 end
